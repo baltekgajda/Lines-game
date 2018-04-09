@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Accordion?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.FlowPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="840.0" prefWidth="1260.0" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="squared.game.NormalModeController">
+   <children>
+      <ImageView fitHeight="840.0" fitWidth="1260.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/NormalModeBackground.png" />
+         </image>
+      </ImageView>
+      <FlowPane fx:id="squareFlowPane" hgap="10.0" layoutX="440.0" layoutY="20.0" prefHeight="800.0" prefWidth="800.0" vgap="10.0" />
+      <Accordion layoutX="59.0" layoutY="305.0" />
+      <VBox fx:id="vBox" layoutX="20.0" layoutY="92.0" prefHeight="531.0" prefWidth="400.0" />
+      <Label fx:id="scoreIcon" alignment="CENTER" contentDisplay="TOP" layoutX="20.0" layoutY="648.0" prefHeight="67.0" prefWidth="400.0" text="0">
+         <font>
+            <Font name="FORCED SQUARE" size="60.0" />
+         </font>
+      </Label>
+      <ImageView fx:id="menuIcon" fitHeight="80.0" fitWidth="80.0" layoutX="20.0" layoutY="740.0" onMouseClicked="#returnToMainMenu" onMouseEntered="#enterMenuIcon" onMouseExited="#exitMenuIcon" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/MenuSquareIcon.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="newGameIcon" fitHeight="80.0" fitWidth="200.0" layoutX="120.0" layoutY="740.0" onMouseClicked="#resetSquares" onMouseEntered="#enterNewGameIcon" onMouseExited="#exitNewGameIcon" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/NewGameSquareIcon.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="muteIcon" fitHeight="80.0" fitWidth="80.0" layoutX="340.0" layoutY="740.0" onMouseClicked="#muteBackgroundMusic" onMouseEntered="#enterMuteIcon" onMouseExited="#exitMuteIcon" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/MuteSquareIcon.png" />
+         </image>
+      </ImageView>
+   </children>
+</Pane>

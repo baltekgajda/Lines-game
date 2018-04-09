@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.Pane?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="840.0" prefWidth="1260.0" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="squared.game.OptionsController">
+   <children>
+      <ImageView fitHeight="840.0" fitWidth="1260.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/OptionsBackground.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="easyIcon" fitHeight="27.0" fitWidth="81.0" layoutX="438.0" layoutY="240.0" onMouseClicked="#setEasyMode" onMouseEntered="#enterEasyIcon" onMouseExited="#exitEasyIcon" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/EasyIcon.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="mediumIcon" fitHeight="27.0" fitWidth="105.0" layoutX="579.0" layoutY="240.0" onMouseClicked="#setMediumMode" onMouseEntered="#enterMediumIcon" onMouseExited="#exitMediumIcon" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/MediumIcon.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="hardIcon" fitHeight="27.0" fitWidth="81.0" layoutX="744.0" layoutY="240.0" onMouseClicked="#setHardMode" onMouseEntered="#enterHardIcon" onMouseExited="#exitHardIcon" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/HardIcon.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="muteIcon" fitHeight="27.0" fitWidth="81.0" layoutX="590.0" layoutY="450.0" onMouseClicked="#muteSound" onMouseEntered="#enterMuteIcon" onMouseExited="#exitMuteIcon" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/MuteIcon.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="resetIcon" fitHeight="27.0" fitWidth="315.0" layoutX="473.0" layoutY="355.0" onMouseClicked="#resetLeaderboard" onMouseEntered="#enterResetIcon" onMouseExited="#exitResetIcon" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/ResetLeaderboard.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="menuIcon" fitHeight="27.0" fitWidth="81.0" layoutX="590.0" layoutY="565.0" onMouseClicked="#returnToMainMenu" onMouseEntered="#enterMenuIcon" onMouseExited="#exitMenuIcon" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/MenuIcon.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="15.0" fitWidth="141.0" layoutX="560.0" layoutY="205.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/GamemodIcon.png" />
+         </image>
+      </ImageView>
+   </children>
+</Pane>
